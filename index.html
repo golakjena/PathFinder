@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PathFinder</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/royalslider.css">     
+	<link rel="stylesheet" href="css/rs-default.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body class="index">
+	<div id="container">
+		<header class="header clearfix">
+			<div class="headerInner clearfix">
+				<h1 class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+				<a href="javascript:void(0);" class="btnMobileNav"><img src="images/btnMobileNav.png" alt=""></a>
+				<nav class="topNav">
+					<ul>
+						<li>
+							<a href="about-us.html">About Us</a>
+						</li>
+						<li><a href="our-team.html">our team</a></li>
+						<li class="dnArrow">
+							<a href="management-services.html">Management services</a>
+							<span></span>
+						</li>
+						<li><a href="our-hotels.html">our hotels</a></li>
+						<li><a href="case-studies.html">Case Studies</a></li>
+						<li><a href="careers.html">Careers</a></li>
+						<li><a href="legendary-service.html">Legendary service</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="slider clearfix">
+			<div class="ticker1">
+				<div class="innerWrap">
+					<div class="list_logo"><img src="images/logo_homewood.png" alt=""></div>
+					<div class="list_logo"><img src="images/logo_residence.png" alt=""></div>
+					<div class="list_logo"><img src="images/logo_staybridge.png" alt=""></div>
+					<div class="list_logo"><img src="images/logo_hamptoon.png" alt=""></div>
+					<div class="list_logo"><img src="images/logo_holidayinn.png" alt=""></div>
+					<div class="list_logo"><img src="images/logo_cortyyard.png" alt=""></div>
+					<div class="list_logo"><img src="images/logo_hilton.png" alt=""></div>
+				</div>
+			</div>
+			<div class="royalSlider rsDefault">
+				<div class="slideImg slideImg1">&nbsp;</div>
+				<div class="slideImg slideImg2">&nbsp;</div>
+				<div class="slideImg slideImg3">&nbsp;</div>
+			</div>
+		</div>
+		<div class="aboveBeyond">
+			<div class="wrapper clearfix">
+				<h3>Above and Beyond</h3>
+				<p>The expression “Above and Beyond” captures the essence and soul of Pathfinder Development. It is reflected in the hotels we develop and manage, each of which offer a set of innovative and unique amenities to pamper our cherished guests. It is reflected in the extraordinary memories we create for our guests through our legendary guest service spirit. It is reflected in the extent of investment and support we provide to our properties to help them maximize their revenue potential and emerge as true market leaders by distinguishing themselves from pesky competitors! It is reflected in our financial commitment to maintaining pristine and modern properties, regardless of their age or brand affiliation. It is reflected in the high level of integrity with which we conduct ourselves, even when it is inconvenient to do so. It is perhaps best reflected in the lengths we go to reward and professionally develop our valued team members, whom we recognize as the single most important factor in our success.</p>
+			</div>
+		</div>
+		<div class="legendaryService">
+			<div class="wrapper clearfix">
+				<div class="legendaryLeft">
+					<p>One of our core beliefs is that a hotel’s most critical asset lies is not the building, land or its personal property but its reputational capital. While brand affiliation has a significant role in how a hotel is perceived, our experience tells us that ultimately a hotel’s reputation in the marketplace is determined more so by the quality of the guest experience it provides.</p>
+				</div>
+				<div class="legendaryRight">
+					<h3>Legendary Service<br>
+					<a href="legendary-service.html">Learn More <img src="images/more.png" alt=""></a></h3>
+				</div>
+			</div>
+		</div>
+		<div class="careerSection">
+			<div class="wrapper clearfix">
+				<div class="cLeft"><img src="images/img-carrier.jpg" alt=""></div>
+				<div class="cRight">
+					<h3>Careers</h3>
+					<p>Pathfinder Development recognizes that its biggest asset is its talented and dedicated workforce, which goes the extra mile to provide a superior experience each and every day for our guests!</p>
+					<p class="alignRight"><a href="careers.html" class="learnMore">LEARN MORE</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="quoteOuter clearfix">
+		<div class="quote">
+			<h2>"Alone we can do so little, together we can do so much."</h2>
+			<img src="images/dots.png" alt="">
+			<h3>Helen Keller</h3>
+		</div>
+	</div>
+	<footer class="footer clearfix">
+		<div class="footerInner clearfix">
+			<div class="footLeft">
+				<p>Copyright &copy; 2015 Pathfinder Development, LLC | All Rights Reserved.</p>
+				<ul>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Sitemap</a></li>
+					<li><a class="email" href="mailto:team@pathfinderdev.com">team@pathfinderdev.com</a></li>
+				</ul>
+			</div>
+			<div class="footRight">Made by Myriann</div>
+		</div>
+	</footer>
+	
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.royalslider.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.easy-ticker.js"></script>
+<script src="js/path-finder.js"></script>
+<script>
+
+
+jQuery(document).ready(function($) {
+
+	// slider function
+    $(".royalSlider").royalSlider({
+        transitionType:'fade',
+        autoHeight: false,
+		arrowsNav: false,
+        keyboardNavEnabled: true,
+        transitionSpeed:600,
+        imageScalePadding:0,
+        //controlNavigation:'none',
+        autoPlay: {
+    		// autoplay options go gere
+    		enabled: true,
+    		pauseOnHover: false,
+    		delay:4000
+		}
+    });  
+
+});
+
+/*window.onload = function(){
+	var rsSlideHeight = $(".rsSlide").height();
+	console.log(rsSlideHeight);
+	$(".slider .royalSlider, .rsOverflow").css({height:rsSlideHeight-5});
+
+	$(window).on("resize", function(){
+		rsSlideHeight = $(".rsSlide").height();
+		$(".slider .royalSlider, .rsOverflow").css({height:rsSlideHeight-5});
+	});
+}*/
+
+
+</script>
+</body>
+</html>

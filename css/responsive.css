@@ -1,0 +1,196 @@
+@media (min-width:320px) and (max-width:767px){
+	.btnMobileNav{ display: block;}
+	.topNav{ width: 240px; height: 100%; overflow-x:hidden; overflow-y: auto; background: #171717; position: fixed; top: 72px; right: 0; margin: 0; display: none;}
+	.topNav ul > li{ display: block; margin: 0;}
+	.topNav ul > li.dnArrow > a{ /*display: inline-block;*/ margin: 0;}
+	.topNav ul > li.dnArrow > span{ width: 23px; height: 22px; background: url(../images/downArrow.png) 0 0 no-repeat; display: inline-block; position: absolute; top: 3px; right: 5px;}
+	.topNav ul > li > a{ padding: 10px 0 10px 15px;}
+	.topNav ul > li > div.subNav{ position: relative; display: block; top: 0;}
+	.topNav ul > li > div.subNav.blue{ width: 100%; background: #252525; padding: 0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; text-align: left;}
+	.topNav ul > li > div.subNav.yellow{ width: 100%; background: #252525; padding: 10px 0 1px 25px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+	.topNav ul > li > div.subNav.yellow ul li a{ color: #696969;}
+	.dvLeft{ width: 100%; float: left; margin: 10px 0 0 0;}
+	.dvRight{ width: 100%; float: left;}
+	.topNav ul > li > div.subNav.yellow ul li{ margin: 0 0 10px 0; display: block; text-align: left;}
+	.topNav ul > li > div.subNav.blue ul li{ margin: 0; border: 0; display: block;}
+	.topNav ul > li > div.subNav.blue ul li a{ padding: 0 0 10px 25px; color: #696969;}
+	.topNav ul > li > div.subNav.blue ul li:first-child a{ padding: 10px 0 10px 25px;}
+	.topNav ul > li > div.subNav.blue ul li a:hover, .topNav ul > li > div.subNav.blue ul li a.active{ color: #d9c966;}
+	.topNav ul > li > div.subNav.yellow ul li a:hover, .topNav ul > li > div.subNav.yellow ul li a.active{ color: #d9c966;}
+
+	.topNav ul > li > a.dnArrow span{ width: 23px; height: 22px; background: url(../images/downArrow.png) 0 0 no-repeat; display: inline-block; position: absolute; top: 3px; right: 5px;}
+	
+	/***
+	Index
+	***/	
+	.slider .rsSlide > img{ margin-top: 0 !important;}
+	.slider .royalSlider{ height: 300px;}
+	.slideImg{ height: 300px; width: 100%; background-size: auto;}
+	.homeBanner2Inner{ padding: 0 20px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+	.wrapper{ padding: 0 10px;}
+	.legendaryLeft{ width: 365px;}
+
+	.footer{ height: auto; padding: 0 0 15px 0;}
+	.footerInner{ padding: 0 15px;}
+	.footLeft{ margin: 15px 0 0 0; width: 100%; text-align: center;}
+	.footLeft p{ width: 100%; float: left;}
+	.footLeft ul{ width: 100%; float: left;}
+	.footRight{ width: 100%; float: left; margin: 15px 0 0 0; text-align: center;}
+	button.mfp-close, button.mfp-arrow{ top: 10px; right: 10px;}
+	.popBanner .rsDefault .rsArrowIcn{ width: 28px; height: 28px;}
+	.popBanner .rsDefault.rsHor .rsArrowRight .rsArrowIcn{ background-size: cover;}
+	.popBanner .rsDefault.rsHor .rsArrowLeft .rsArrowIcn{ background-size: cover;}
+	.rsDefault .rsArrow{ width: 28px;}
+	/***
+	mission statement
+	***/
+	/*.homeBanner2, .historyQuote, .teamQuote, .managementQuote, .legendaryQuote, .talentQuote, .salesQuote, .facilityQuote, .sustainabilityQuote, .staybridgeQuote, .careerQuote{ height: 225px;}*/
+	.quoteOuter{ padding: 30px 0;}
+	.quote{ padding: 0 10px;}
+	.quote h2{ font-size: 18px; line-height: 24px;}
+	.quote h3{ font-size: 18px; line-height: 24px;}
+	.legendayBtnCont{ padding: 30px 0;}
+
+	.aboveBeyond{ padding: 30px 0;}
+	.aboveBeyond h3{ font-size: 22px; line-height: 26px;}
+
+	.legendaryService{ padding: 30px 0;}
+	.legendaryLeft{ width: 100%;}
+	.legendaryRight{ width: 100%; float: left;}
+	.legendaryRight h3{ font-size: 22px; line-height: 26px;}
+
+	.careerSection{ padding: 30px 0;}
+	.cLeft{ width: 100%; margin: 0; text-align: center;}
+	.cRight{ width: 100%; margin: 20px 0 0 0; float: left; overflow: visible;}
+	.cRight h3{ font-size: 22px;}
+	.cRight p .learnMore{ margin: 40px 0 0 0;}
+	.learnMore{ font-size: 18px;}
+
+	
+	.btnLegendary{ font-size: 16px; line-height: 18px; width: 75%; text-align: center; padding: 15px 20px;}
+	.logoHotels{ display: none!important;}
+	.ticker1{ display: none !important;}
+	.missionStatement, .bannerCont, .ourTeam, .managementBanner, .clientRelations, .legendaryBanner, .talentDevelopment, .sales, .facilityManagement, .revenueManagement, .accounting, .sustainability, .staybridgeBanner, .careerBanner, .legendaryBanner, .testimonial{ height: 250px;}
+	.txtOurteam{ padding: 30px 0 0 0;}
+	.txtOurteam h1{ font-size: 36px; line-height: 48px;}
+	.txtOurteam h2{ font-size: 22px; padding: 0 0 18px 0;}
+	.teamRow{ padding: 20px 0;}
+	.teamLeft{ width: 90px; height: 90px; margin: 0 10px 0 0;}
+	.teamRow h3{ font-size: 18px; line-height: 22px;}
+	.teamRow h4{ font-size: 14px; line-height: 18px; padding: 0 0 10px 0;}
+
+	.graphCont{ margin: 30px 0 0 0; padding: 20px;}
+	.graphCont h4{ font-size: 16px; margin: 0 0 30px 0;}
+	.graph.yellow{ margin: 0 20px 0 0;}
+	.graph.blue{ margin: 0 0 0 20px;}
+	.txtGraph li.txt1{ margin: 0;}
+	.txtGraph li.txt2{ margin: 0 0 0 27px;}
+
+	.success{ padding: 30px 0;}
+	.success h2{ font-size: 22px; line-height: 26px;}
+	.success h3{ font-size: 22px;}
+
+	.managementListCont{ padding: 30px 0 20px 0;}
+	.managementRow{ padding: 0 0 20px 0;}
+	.managementRow h3{ font-size: 18px; list-style: 22px;}
+	.managementLeft{ width: 100%; float: left;}
+	.managementRight{ width: 100%; float: left; margin: 20px 0 0 0;}
+
+	.clientRelationContent{ padding: 30px 0;}
+	.clientDesc{ width: 100%;}
+	.clientDesc h3{ font-size: 22px; line-height: 24px;}
+	.contentBox{ padding: 30px 20px 0;}
+	.contentRow h4{ font-size: 16px; line-height: 18px;}
+	.contentRow.mTop70{ margin-top:30px; }
+	.readTestimonial a{ font-size: 16px;}
+
+	.careerCont, .talentDevelopmentContent{ padding: 30px 0 0 0;}
+	.careerCont h2{ font-size: 22px;}
+	.careerList{ padding: 20px;}
+	.careerList li{ padding: 0 0 0 25px; margin: 0 0 15px 0;}
+	.dottedLine.mTop50{ margin-top:30px; }
+	.talentDevelopmentContent h3{ font-size: 22px;}
+
+	.hotelList{ right: 0;}
+	.popup{ width: 95%; left: 50%; transform:translateX(-50%); -moz-transform:translateX(-50%); -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); height: auto; right: 0; z-index: 9;}
+	.popInner{ max-height: 430px; overflow: auto;}
+
+	.caseStudyRow{ padding: 30px 0;}
+	.caseStudyRow h3{ font-size: 22px;}
+	.positions{ padding: 30px 0;}
+
+	.ourMission{ padding: 30px 0;}
+	.missionLeft{ width: 100%; margin: 0;}
+	.missionLeft h3{ font-size: 22px;}
+	.missionRight{ width: 100%; float: left; overflow: visible; margin: 20px 0 0 0;}
+
+	.testimonialContent{ padding: 30px 0;}
+	.testimonialContent h3{ font-size: 22px; padding: 0;}
+	.testimonialContent h3.mTop70{ margin-top: 35px;}
+	
+	.hotelPop{ /*max-width: 280px; */padding: 30px 10px;}
+	.hotelCol{ max-width: 93%;}
+	.popHeading{ font-size: 14px; margin: 0;}
+	#cboxNext, #cboxPrevious, #cboxClose{ top:10px;}
+	.popBanner{ padding: 15px 0;}
+	.popHeading2{ font-size: 14px;}
+
+	.managementBanner, .clientRelations, .legendaryBanner, .talentDevelopment, .sales, .facilityManagement, .revenueManagement, .accounting, .sustainability{ margin:72px 0 0 0;}
+}
+
+@media (min-width:360px) and (max-width:640px){
+	.txtGraph li.txt1{ margin: 0;}
+	.txtGraph li.txt2{ margin: 0 0 0 50px;}
+}
+
+@media (min-width:768px) and (max-width:1024px){
+	.btnMobileNav{ display: block;}
+	.topNav{ width: 240px; height: 100%; overflow-x:hidden; overflow-y: auto; background: #171717; position: fixed; top: 72px; right: 0; margin: 0; display: none;}
+	.topNav ul > li{ display: block; margin: 0;}
+	.topNav ul > li > a{ padding: 10px 0 10px 15px;}
+	.topNav ul > li.dnArrow > span{ width: 23px; height: 22px; background: url(../images/downArrow.png) 0 0 no-repeat; display: inline-block; position: absolute; top: 3px; right: 5px;}
+	.topNav ul > li > div.subNav{ position: relative; top: 0; display: block;}
+	.topNav ul > li > div.subNav.blue{ width: 100%; background: #252525; padding: 0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; text-align: left;}
+	.topNav ul > li > div.subNav.yellow{ width: 100%; background: #252525; padding: 10px 0 1px 25px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; text-align: left;}
+	.topNav ul > li > div.subNav.yellow ul li a{ color: #696969;}
+	.dvLeft{ width: 100%; float: left; margin: 10px 0 0 0;}
+	.dvRight{ width: 100%; float: left;}
+	.topNav ul > li > div.subNav.yellow ul li{ margin: 0 0 10px 0; display: block;}
+	.topNav ul > li > div.subNav.blue ul li{ margin: 0; border: 0; display: block;}
+	.topNav ul > li > div.subNav.blue ul li a{ padding: 0 0 10px 25px; color: #696969;}
+	.topNav ul > li > div.subNav.blue ul li:first-child a{ padding: 10px 0 10px 25px;}
+	.topNav ul > li > div.subNav.blue ul li a:hover, .topNav ul > li > div.subNav.blue ul li a.active{ color: #d9c966;}
+	.topNav ul > li > div.subNav.yellow ul li a:hover, .topNav ul > li > div.subNav.yellow ul li a.active{ color: #d9c966;}
+
+	.topNav ul > li > a.dnArrow span{ width: 23px; height: 22px; background: url(../images/downArrow.png) 0 0 no-repeat; display: inline-block; position: absolute; top: 3px; right: 5px;}
+	
+	/***
+	Index
+	***/	
+	.slider .rsSlide > img{ margin-top: 0 !important;}
+	.homeBanner2Inner{ padding: 0 20px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+	.wrapper{ padding: 0 20px;}
+	.legendaryLeft{ width: 365px;}
+
+	.footer{ height: auto; padding: 0 0 15px 0;}
+	.footerInner{ padding: 0 15px;}
+	.footLeft{ margin: 15px 0 0 0; width: 100%; text-align: center;}
+	.footLeft p{ width: 100%; float: left;}
+	.footLeft ul{ width: 100%; float: left;}
+	.footRight{ width: 100%; float: left; margin: 15px 0 0 0; text-align: center;}
+
+	/***
+	mission statement
+	***/
+	.quote{ padding: 0 20px;}
+	.contentBox{ padding: 60px 60px 0;}
+	.btnLegendary{ font-size: 17px; padding: 15px 20px;}
+	.logoHotels{ right: 0;}
+	.ticker1{ right: 0;}
+	.missionStatement, .bannerCont, .ourTeam, .managementBanner, .clientRelations, .legendaryBanner, .talentDevelopment, .sales, .facilityManagement, .revenueManagement, .accounting, .sustainability, .staybridgeBanner, .careerBanner, .legendaryBanner{ background-size: auto;}
+
+	.hotelOuter{ padding: 15px;}
+	.hotelPop{ max-width: 700px;}
+
+	.managementBanner, .clientRelations, .legendaryBanner, .talentDevelopment, .sales, .facilityManagement, .revenueManagement, .accounting, .sustainability{ margin:72px 0 0 0;}
+}

@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body, html { height:100%; width:100%;}
+form { height:100%; }
+body{ background:#fff; font-family:'nexa_boldregular', Arial; font-size:14px; color:#666666;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+img { max-width: 100%; height: auto; border:0; width: auto\9; /* ie8 */}
+a{ text-decoration:none; outline:0; border:0;}
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.clr{ clear:both;}
+.push { height:90px;}
+ul, li{ list-style-type:none;}
+h1, h2, h3, h4, h5, h6{ font-weight:normal;}
+table{ border-collapse:collapse;}
+.fLeft{ float:left;}
+.fRight{ float:right;}
+.alignRight{ text-align:right;}
+.alignLeft{ text-align:left;}
+.alignCenter{ text-align:center;}
+.positionRelative{ position:relative;}
+.mTop35{ margin-top: 35px;}
+.mTop50{ margin-top: 50px;}
+.mTop70{ margin-top: 70px;}
+
+
+/****
+Font Face
+**************/
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_bold-webfont.eot');
+    src: url('../fonts/nexa_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_bold-webfont.woff2') format('woff2'),
+         url('../fonts/nexa_bold-webfont.woff') format('woff'),
+         url('../fonts/nexa_bold-webfont.ttf') format('truetype'),
+         url('../fonts/nexa_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../fonts/nexa_light-webfont.eot');
+    src: url('../fonts/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_light-webfont.woff2') format('woff2'),
+         url('../fonts/nexa_light-webfont.woff') format('woff'),
+         url('../fonts/nexa_light-webfont.ttf') format('truetype'),
+         url('../fonts/nexa_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/***
+Main CSS Rules
+***********/
+#container{ width: 100%; /*min-height:100%; height:100%; height:auto !important; background:#fff; margin-bottom:-90px;*/}
+.header{ width: 100%; height: 72px; background: #171717; position: fixed; left:0; top: 0; z-index: 999999;}
+.headerInner{ max-width: 1080px; margin: 0 auto;}
+.logo{ display: inline-block; float: left; margin: 3px 0 0 0;}
+.logo a{ display: block;}
+.logo img{ vertical-align: top;}
+.btnMobileNav{ width: 39px; height: 26px; position: absolute; right: 10px; top: 22px; z-index: 9; display: none;}
+.topNav{ float: right; margin: 20px 0 0 0;}
+.topNav ul > li{ display: inline-block; font-size: 10px; text-transform: uppercase; margin: 0 0 0 20px; position: relative;}
+.topNav ul > li > a{ display: block; color: #fff; padding: 10px 0; transition:color 0.3s linear; -moz-transition:color 0.3s linear; -webkit-transition:color 0.3s linear;}
+.topNav ul > li > a:hover, .topNav ul > li > a.active{ color: #d9c966;}
+.topNav ul > li > div.subNav{ position: fixed; width: 100%; left:0; top: 72px; z-index: 9; box-sizing:border-box;}
+.subNavInner{ max-width: 1080px; margin:0 auto;}
+.topNav ul > li > div.subNav.blue{ background: #25bada; text-align: center;}
+.topNav ul > li > div.subNav.blue ul li{ display: inline-block; font-size: 10px; text-transform: capitalize; margin: 0;}
+.topNav ul > li > div.subNav.blue ul li:last-child{ border-bottom: 0;}
+.topNav ul > li > div.subNav.blue ul li a{ display: block; color: #fff; padding: 10px; transition:color 0.1s linear; -moz-transition:color 0.1s linear; -webkit-transition:color 0.1s linear;}
+.topNav ul > li > div.subNav.blue ul li a:hover, .topNav ul > li > div.subNav.blue ul li a.active{ color: #171717;}
+
+.topNav ul > li > div.subNav.yellow{ background: #e4b835; padding: 10px; text-align: center;}
+.topNav ul > li > div.subNav.yellow ul li{ display: inline-block; font-size: 10px; text-transform:capitalize; margin: 0;}
+.topNav ul > li > div.subNav.yellow ul li a{ display: block; padding:0 10px; color: #fff; transition:color 0.1s linear; -moz-transition:color 0.1s linear; -webkit-transition:color 0.1s linear;}
+.topNav ul > li > div.subNav.yellow ul li a:hover, .topNav ul > li > div.subNav.yellow ul li a.active{ color: #171717;}
+.dvLeft{ width: 50%; float: left;}
+.dvRight{ width: 50%; float: right;}
+.topNav ul > li:hover > div.subNav{ display: block;}
+
+
+.wrapper{ max-width: 860px; margin: 0 auto;}
+p{ font-size: 14px; line-height: 24px;}
+
+/***
+Home Page
+***/
+.slider{ margin:69px 0 0 0; position: relative;}
+.slider .rsSlide > img{ width: 100% !important; margin-left:0!important;}
+.slideImg{ height: 430px; width: 100%;}
+.slideImg.slideImg1{ background: url(../images/slide1.jpg) center center no-repeat; background-size: cover;}
+.slideImg.slideImg2{ background: url(../images/slide2.jpg) center center no-repeat; background-size: cover;}
+.slideImg.slideImg3{ background: url(../images/slide3.jpg) center center no-repeat; background-size: cover;}
+
+.bannerCont{ height: 430px; background: url(../images/home-banner.jpg) center center no-repeat; background-size: cover; position: relative; margin: 72px 0 0 0;}
+.missionStatement{ height: 430px; background: url(../images/home-banner.jpg) center center no-repeat; background-size: cover; position: relative; margin: 72px 0 0 0;}
+.logoHotels{ width: 140px; height: 430px; background: url(../images/logo-bg.png) 0 0 repeat; position: absolute; right: 40px; top: 0; z-index: 999;}
+
+.ticker1{ width: 140px; height: 100% !important; background: url(../images/logo-bg.png) 0 0 repeat; position: absolute !important; right: 40px; top: 0; z-index: 999; text-align: center;}
+.innerWrap{ width: 100%; text-align: center;}
+.list_logo{ padding:10px 0 0 0 !important;}
+
+.mCSB_container{ margin-right: 0 !important;}
+.logoHotels ul{ text-align: center;}
+.logoHotels ul li{ display: block; padding: 25px 0 0 0; position: relative;}
+.homeBanner2{ height: 280px; background: url(../images/home-banner2.jpg) top center no-repeat; background-size: cover; position: relative;}
+.homeBanner2Inner{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: rgba(255,169,2,0.85);}
+.quoteOuter{ background: #25bada; padding: 45px 0;}
+.quoteOuter.qouteYellow{ background: #ffb016;}
+.quote{ text-align: center; max-width: 860px; margin: 0 auto; position: relative;}
+.quote h2{ font-size: 30px; font-style: italic; color: #fff; line-height: 32px; padding: 0 0 10px 0; position: relative;}
+.quote > img{ position: relative;}
+.quote h3{ font-size: 24px; line-height: 30px; color: #fff; padding: 10px 0 0 0; position: relative;}
+
+.aboveBeyond{ background: #fff; padding: 60px 0;}
+.aboveBeyond h3{ font-size: 30px; line-height: 30px; color: #242424; text-align: center; text-transform: uppercase; padding: 0 0 20px 0;}
+.aboveBeyond p{ color: #666666;}
+
+.contactUs{ background: #fff; padding: 60px 0; text-align: center;}
+.contactUs h3{ font-size: 30px; line-height: 30px; color: #242424; text-align: center; text-transform: uppercase; padding: 0 0 20px 0;}
+.contactUs h4{ font-family: 'nexa_boldregular', Arial; font-size: 18px; line-height: 30px; color: #242424; text-align: center; padding: 0;}
+.contactUs p{ color: #666666;}
+
+.legendaryService{ background: #242424; padding: 60px 0;}
+.legendaryLeft{ width: 430px; float: left;}
+.legendaryLeft p{ color: #fffefe;}
+.legendaryRight{ width: 340px; float: right; margin: 40px 0 0 0;}
+.legendaryRight h3{ font-size: 30px; line-height: 32px; color: #fff; text-transform: uppercase;}
+.legendaryRight h3 a{ color: #25bada;}
+.legendaryRight h3 a img{ vertical-align: middle;}
+.careerSection{ background: #fff; padding: 60px 0;}
+.cLeft{ width: 306px; float: left; margin: 0 50px 0 0;}
+.cRight{ display: block; overflow: hidden;}
+.cRight h3{ font-size: 30px; color: #242424; padding: 0 0 10px 0;}
+.cRight p{ color: #666666;}
+.learnMore{ display: inline-block; font-size: 24px; color: #e0991e;}
+.cRight p .learnMore{ margin: 100px 0 0 0;}
+
+/***
+History
+***/
+
+.historyQuote{ height: 238px; background: url(../images/history-quote-banner.jpg) top center no-repeat; background-size: cover; position: relative;}
+.historyQuoteInner{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: rgba(36,36,36,0.9);}
+.historyQuoteInner .quote h3{ color: #fff;}
+.ourMission{ background: url(../images/our-mission-bg.png) top right no-repeat; padding: 100px 0 70px 0;}
+.missionLeft{ width: 300px; float: left; margin: 80px 100px 0 0;}
+.missionLeft h3{ font-size: 30px; text-transform: uppercase; padding: 0 0 5px 0; color: #242424;}
+.missionLeft p{ color: #666666;}
+.missionRight{ display: block; overflow: hidden;}
+.missionRight ul li{ display: block; font-size: 14px; color: #666666; margin: 0 0 30px 0;}
+.missionRight ul li span.num{ color: #17a3c1; font-size: 18px; display: inline; padding: 0 15px 0 0;}
+.dottedLine{ display: block; height: 5px; background: url(../images/dotted.png) 0 0 repeat-x;}
+.missionLeft .dottedLine{ width: 278px; margin: 10px 0 0 0;}
+
+/***
+Our Team
+***/
+.ourTeam{ height: 430px; background: url(../images/team-banner.jpg) center center no-repeat; background-size: cover; position: relative; margin: 72px 0 0 0; overflow: hidden;}
+.txtOurteam{ text-align: center; padding: 125px 0 0 0;}
+.txtOurteam h1{ font-size: 55px; line-height: 68px; color: #fff; position: relative;}
+.txtOurteam h2{ font-size: 30px; color: #fff; font-family: 'nexa_lightregular', Arial; padding: 0 0 40px 0; position: relative;}
+.txtOurteam > img{ position: relative;}
+
+.teamQuote{ height: 253px; background: url(../images/team-quote-banner.jpg) top center no-repeat; background-size: cover; position: relative;}
+.teamQuoteInner{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: rgba(255,169,2,0.85);}
+.teamQuoteInner .quote h3{ color: #fff;}
+
+.teamList{ background: #fff;}
+.teamRow{ padding: 50px 0; border-bottom: 1px #dfdede solid; text-align: center;}
+.teamRow h3{ font-size: 30px; line-height: 32px; color: #ffa902; text-transform: uppercase;}
+.teamRow h4{ font-size: 18px; line-height: 24px; color: #171717; padding: 0 0 15px 0;}
+.teamRow p{ color: #666666;}
+.teamLeft{ width: 195px; height: 195px; background: #dfdede; float: left; margin: 0 33px 0 0; overflow: hidden;}
+.teamLeft img{ width: 100%; height: 100%;}
+.teamRight{ position: relative; overflow: hidden; text-align: left;}
+.btnIn{ position: absolute; right: 0; top: 28px; display: inline-block;}
+
+/***
+Career
+***/
+.careerBanner{ height: 430px; background: url(../images/career-banner.jpg) center center no-repeat; background-size: cover; position: relative; margin: 72px 0 0 0;}
+.careerQuote{ height: 281px; background: url(../images/career-quote-banner.jpg) top center no-repeat; background-size: cover; position: relative;}
+.careerQuoteInner{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: rgba(40,161,187,0.8);}
+.careerQuoteInner .quote h3{ color: #fff;}
+
+.careerCont{ background: #fff url(../images/career-bg.png) top right no-repeat; padding: 100px 0;}
+.careerCont h2{ font-size: 30px; color: #242424; text-align: center; padding: 0 0 10px 0; text-transform: uppercase;}
+.careerList{ padding: 50px 30px 0 30px;}
+.careerList li{ font-size: 14px; color: #666666; padding: 0 0 0 50px; margin:0 0 30px 0; background: url(../images/bullet.png) 0 6px no-repeat; line-height: 24px;}
+.careerList li h4{ font-size: 14px; color: #28a1bb;}
+.positions{ text-align: center; padding: 50px 0 0 0;}
+.positions p{ padding: 0 0 10px 0;}
+.positionList li{ margin: 0 0 5px 0;}
+.positionList li a{ color: #28a1bb;}
+.btnApply{ border:1px #bebebe solid; font-size: 24px; line-height: 24px; color: #28a1bb; outline: 0; padding: 15px 20px; display: inline-block; transition:background 0.2s linear; -moz-transition:background 0.2s linear; -webkit-transition:background 0.2s linear;}
+.btnApply:hover{ background: #28a1bb; color: #fff; border:1px #28a1bb solid;}
+
+/***
+Legendary Service
+***/
+.legendaryBanner{ height: 430px; background: url(../images/legendary-service-banner.jpg) center center no-repeat; background-size: cover; position: relative; margin: 106px 0 0 0;}
+.legendaryQuote{ background:#25bada; position: relative;}
+.legendaryQuoteInner .quote h3{ color: #fff;}
+.legendayBtnCont{ padding: 70px 0 0 0; text-align: center;}
+.btnLegendary{ display: inline-block; background: #25bada; font-size: 24px; line-height: 30px; padding: 30px 70px; color: #fff; }
+
+/***
+Staybridge Suits
+***/
+
+.staybridgeBanner{ height: 430px; background: url(../images/staybridge-banner.jpg) center center no-repeat; background-size: cover; position: relative; margin: 72px 0 0 0; overflow: hidden;}
+.staybridgeQuote{ height: 253px; background: url(../images/team-quote-banner.jpg) top center no-repeat; background-size: cover; position: relative;}
+.staybridgeQuoteInner{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: rgba(255,169,2,0.9);}
+.staybridgeQuoteInner .quote h3{ color: #fff;}
+.caseStudy{ background: #fff;}
+.caseStudyRow{ padding: 50px 0; border-bottom: 1px #dfdede solid;}
+.caseStudyRow h3{ font-size: 30px; color: #242424; padding: 0 0 5px 0; text-transform: uppercase; text-align: center;}
+.caseStudyRow p{ text-align: center;}
+
+/***
+Management Services
+***/
+
+.managementBanner{ height: 430px; background: url(../images/client-relations-banner.jpg) center center no-repeat; background-size: cover; position: relative; margin: 106px 0 0 0;}
+.managementQuote{ background: #25bada;}
+.managementQuoteInner .quote h3{ color: #fff;}
+.graphCont{ background: #f5f4f4; padding: 50px; margin: 50px 0 0 0;}
+.graphCont h4{ font-size: 24px; color: #242424; text-align: center; margin:0 0 50px 0;}
+.graphBox{ max-width: 362px; margin:0 auto;}
+.graphRow{ border-bottom: 1px #807f7f solid; text-align: center;}
+.graph{ display: inline-block; width: 86px; vertical-align: bottom;}
+.graph span{ display: block; font-size: 14px; color: #fff; position: relative; top: 50%; transform:translateY(-50%); -moz-transform:translateY(-50%); -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%);}
+.graph.yellow{ background: #f6aa13; height: 200px; margin: 0 50px 0 0;}
+.graph.blue{ background: #2abbda; height: 50px; margin: 0 0 0 50px;}
+.txtGraph{ text-align: left; padding: 12px 0 0 0;}
+.txtGraph li{ display: inline-block; font-size: 12px; color: #242424; text-align: center; vertical-align: top;}
+.txtGraph li.txt1{ margin: 0 0 0 20px;}
+.txtGraph li.txt2{ margin: 0 0 0 91px;}
+
+.success{ background: #242424; padding: 50px 0; text-align: center;}
+.success h2{ font-size: 30px; font-style: italic; color: #fff; line-height: 32px; padding: 0 0 10px 0;}
+.success h3{ font-size: 24px; line-height: 30px; color: #fff; padding: 10px 0 0 0;}
+.managementListCont{ background: url(../images/career-bg.png) top right no-repeat; padding: 90px 0 20px 0;}
+.managementRow{ padding: 0 0 60px 0;}
+.managementRow h3{ font-size: 24px; line-height: 28px; color: #2692aa; text-transform: uppercase; padding: 0 0 5px 0;}
+.managementRow p a{ color: #666666;}
+.managementLeft{ width: 350px; float: left;}
+.managementRight{ width: 350px; float: right;}
+
+.clientRelationContent{ background: url(../images/career-bg.png) top right no-repeat; padding: 100px 0;}
+.clientDesc{ width: 330px; margin:0 auto; text-align: center;}
+.clientDesc h3{ font-size: 30px; line-height: 32px; color: #242424; padding: 0 0 5px 0; text-transform: uppercase;}
+.clientDesc p{ padding: 0 0 20px 0;}
+
+.sliderWrapper{ max-width: 1120px; margin: 0 auto;}
+.contentBox{ padding: 60px 120px 0 120px;}
+.contentRow h4{ font-size: 24px; line-height: 28px; color: #28a1bb; padding: 0 0 5px 0;}
+.contentLeft{ width: 47%; float: left;}
+.contentRight{ width: 47%; float: right;}
+.readTestimonial{ display: inline-block; float: right; margin: 50px 0 0 0;}
+.readTestimonial a{ font-size: 24px; color: #28a1bb;}
+.readTestimonial a span{ color: #000000;}
+
+/***
+Our Hotels
+***/
+.ourHotelsOuter{ height: 600px; position: relative; margin: 72px 0 0 0;}
+
+.hotelBanner{ height: 600px; position: relative;}
+.hotelBanner li{ height: 600px; position:absolute; top: 0; left: 0; width: 100%; display: none;}
+.hotelBanner li#hotel_1{ background: url(../images/holiday-inn-banner.jpg) top center no-repeat; background-size: cover;}
+.hotelBanner li#hotel_2{ background: url(../images/homton-inn-parthur-banner.jpg) top center no-repeat; background-size: cover;}
+.hotelBanner li#hotel_3{ background: url(../images/hotel-staybridge-banner.jpg) top center no-repeat; background-size: cover;}
+.hotelBanner li#hotel_4{ background: url(../images/hotel-holiday-inn-houston-banner.jpg) top center no-repeat; background-size: cover;}
+.hotelBanner li#hotel_5{ background: url(../images/hampton-inn-victoria-banner.jpg) top center no-repeat; background-size: cover;}
+.hotelBanner li#hotel_6{ background: url(../images/humton-inn-suit-center-banner.jpg) top center no-repeat; background-size: cover;}
+.hotelBanner li#hotel_7{ background: url(../images/holiday-inn-downtown-banner.jpg) top center no-repeat; background-size: cover;}
+.hotelBanner li#hotel_8{ background: url(../images/hotel-townplace-banner.jpg) top center no-repeat; background-size: cover;}
+
+
+.hotelList{ width: 166px; height: 100%; background: url(../images/logo-bg.png) 0 0 repeat; position: absolute; right: 20px; top: 0; z-index: 9; overflow: hidden;}
+.hotelList ul{ text-align: left; padding: 0 15px;}
+.hotelList ul li{ display: block; padding: 25px 0 0 0; font-size: 12px; line-height: 18px; position: relative;}
+.hotelList ul li span{ width: 6px; height: 12px; position: absolute; left: -15px; top: 27px; background:url(../images/arrow.png) 0 0 no-repeat; display: none;}
+.hotelList ul li a{ display: block; color: #ffffff;}
+.hotelList ul li a:hover, .hotelList ul li.activeTab a{ color: #4dd4f0;}
+.hotelList ul li.activeTab span{ display: block;}
+
+.hotelDesc{ background: rgba(0,0,0,0.8); padding: 15px; position: absolute; left: 155px; bottom: 55px;}
+.hotelDesc p{ font-size: 14px; line-height: 18px; color: #f7f7f6;}
+
+.popup{ width: 505px; height: 100%; position: absolute; top: 0; right: 186px; background: #1c1c1c; padding: 35px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -ms-box-sizing:border-box; display: none;}
+.btnClose{ width: 11px; height: 13px; position: absolute; right: 20px; top: 20px;}
+.popup h3{ font-size: 18px; line-height: 22px; color: #50dcfa; border-bottom: 1px #4c4c4c solid; padding: 0 0 10px 0; margin:10px 0 15px 0;}
+.list li{ font-size: 12px; line-height: 18px; color: #e7e6e6; margin:0 0 15px 0; background: url(../images/bullet2.png) 0 6px no-repeat; padding: 0 0 0 13px;}
+.address{ font-size: 12px; line-height: 18px; color: #e7e6e6; padding: 20px 0 0 13px;}
+.address a{ color: #50dcfa; text-decoration: underline;}
+
+
+.hotelOuter{ padding: 15px 0; margin:72px 0 0 0; background: #1c1c1c;}
+.hotelInner{ max-width: 1016px; margin:0 auto;}
+.hotelRow{ text-align: center;}
+.hotelCol{ display: inline-block; max-width: 32%; margin:0 0.5% 15px 0.5%; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; position: relative; cursor: pointer;}
+.hotelTxtCont{ width: 100%; padding: 10px; background: #000000; font-size: 14px; color: #fff; position: absolute; bottom: 0; left: 0; text-align: left;  box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; opacity: 0; transition:opacity 0.3s linear; -moz-transition:opacity 0.3s linear; -webkit-transition:opacity 0.3s linear;}
+.hotelCol:hover .hotelTxtCont{ opacity: 1;}
+.txtHotel{ float: left;}
+.btnLearnMore{ float: right;}
+.hotelCol > img{ vertical-align: top;}
+
+.hotelPop{ background: #171717; padding: 30px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.popHeading{ font-size: 24px; color: #4dd4f0; text-align: center; margin: 0 60px; /*background: url(../images/border.jpg) center center repeat-x;*/}
+/*.popHeading span{ background: #171717; padding: 0 5px;}*/
+.popBanner{ vertical-align: top; padding: 30px 0 20px 0;}
+.popHeading2{ font-size: 18px; color: #50dcfa; border-bottom: 1px #484848 solid; padding: 0 0 10px 0; display: inline-block; margin: 0 0 15px 0;}
+.imgRow{}
+
+
+/***
+clientRelations
+***/
+.clientRelations{ height: 430px; background: url(../images/client-relations-banner.jpg) center center no-repeat; background-size: cover; margin:106px 0 0 0; position: relative;}
+
+/***
+Talent Development
+***/
+.talentDevelopment{ height: 430px; background: url(../images/talent-development-banner.jpg) center center no-repeat; background-size: cover; margin:106px 0 0 0; position: relative;}
+.talentQuote{ height: 281px; background: url(../images/talent-quote-banner.jpg) top center no-repeat; background-size: cover; position: relative;}
+.talentQuoteInner{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: rgba(255,169,2,0.9);}
+.talentQuoteInner .quote h3{ color: #fff;}
+
+.talentDevelopmentContent{ padding: 100px 0; background: url(../images/career-bg.png) top right no-repeat;}
+.talentDevelopmentContent h3{ font-size: 30px; text-align: center; text-transform: uppercase; color: #242424; padding: 0 0 10px 0;}
+
+/***
+Sales and Marketting
+***/
+.sales{ height: 430px; background: url(../images/sales-banner.jpg) center center no-repeat; background-size: cover; margin:106px 0 0 0; position: relative;}
+.salesQuote{ height: 281px; background: url(../images/sales-quote-banner.jpg) top center no-repeat; background-size: cover; position: relative;}
+.salesQuoteInner{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: rgba(255,169,2,0.9);}
+.salesQuoteInner .quote h3{ color: #fff;}
+
+/***
+Facilities Management
+***/
+.facilityManagement{ height: 430px; background: url(../images/facility-management-banner.jpg) center center no-repeat; background-size: cover; margin:106px 0 0 0; position: relative;}
+.facilityQuote{ height: 281px; background: url(../images/facilities-quote-banner.jpg) top center no-repeat; background-size: cover; position: relative;}
+.facilityQuoteInner{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: rgba(40,161,187,0.8);}
+.facilityQuoteInner .quote h3{ color: #fff;}
+.revenueManagement{ height: 430px; background: url(../images/revenue-management-banner.jpg) center center no-repeat; background-size: cover; margin:106px 0 0 0; position: relative;}
+.accounting{ height: 430px; background: url(../images/accounting-banner.jpg) center center no-repeat; background-size: cover; margin:106px 0 0 0; position: relative;}
+.sustainability{ height: 430px; background: url(../images/sustainability-banner.jpg) center center no-repeat; background-size: cover; margin:106px 0 0 0; position: relative;}
+.sustainabilityQuote{ height: 281px; background: url(../images/sustainability-quote-banner.jpg) top center no-repeat; background-size: cover; position: relative;}
+.sustainabilityQuoteInner{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: rgba(40,161,187,0.8);}
+.sustainabilityQuoteInner .quote h3{ color: #fff;}
+.testimonial{ height: 430px; background: url(../images/accounting-banner.jpg) center center no-repeat; background-size: cover; margin:72px 0 0 0; position: relative;}
+.testimonialContent{ background: #fff; padding: 100px 0;}
+.testimonialContent h3{ font-size: 30px; text-align: center; text-transform: uppercase; color: #242424; padding: 0 0 10px 0;}
+.testimonialContent p{ margin: 25px 0 0 0;}
+
+/***
+Footer
+***/
+.footer{ width: 100%; height: 90px; background: #171717; float: left;}
+.footerInner{ max-width: 1080px; margin: 0 auto; font-size: 12px;}
+.footLeft{ float: left; color: #fff; margin: 35px 0 0 0;}
+.footLeft p{ display: inline; font-size: 12px;}
+.footLeft ul{ display: inline;}
+.footLeft ul li{ display: inline-block; background: url(../images/separator.png) right center no-repeat;}
+.footLeft ul li:last-child{ background: none;}
+.footLeft ul li a{ color: #c8ab29; padding: 0 6px;}
+.footLeft ul li a.email{ color: #19adaf;}
+.footRight{ float: right; margin: 35px 0 0 0; font-size: 12px; color: #fff;}
